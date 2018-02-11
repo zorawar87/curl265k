@@ -1,7 +1,9 @@
 CC=gcc
+CFLAGS=$(shell curl-config --cflags)
+LIBS=$(shell curl-config --libs)
 
 default:
-	$(CC) main.c -o main -I/usr/local/include -L/usr/local/lib -lcurl
+	$(CC) main.c -o main $(CFLAGS) $(LIBS)
 
 clean:
 	rm -f chkspeed main
