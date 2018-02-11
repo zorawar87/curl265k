@@ -10,7 +10,7 @@ tar -xzf curl-7.58.0.tar.gz
 
 Then, in accordance with [these instructions](https://curl.haxx.se/docs/install.html), install libcurl.
 
-For Linux, do:
+For Linux, do (inside `./curl-7.58.tar.gz`):
 ```bash
 ./configure
 make
